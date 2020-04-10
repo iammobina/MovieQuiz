@@ -1,17 +1,19 @@
-import React from "react";
+import React,{Component} from "react";
 
-const getyear=() =>{
+const getyear=()=>{
     const newdate=new Date();
     return newdate.getFullYear();
 }
 
-const Header=() =>{
-    return(
+class Header extends Component {
+    render(){
+        return(
         <div>
             <h1>Welcome to MovieQuize</h1>
-            <h2>this site started in {getyear()}</h2>
+            <h2>This site developed in {getyear()}</h2>
         </div>
     )
+    }
 }
 
 export default Header;
