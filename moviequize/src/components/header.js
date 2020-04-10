@@ -8,10 +8,15 @@ const getyear=()=>{
 }
 
 class Header extends Component {
+    inputChangeHandler(event){
+        console.log(event.target.value)
+         console.log('Hey')
+    }
     render(){
         return(
         <div className="top">
-            <h1>Welcome to MovieQuize</h1>
+            <h1>Welcome to MovieQuiz</h1>
+            <input type="text" onChange={this.inputChangeHandler}/>
             <h2>This site developed in {getyear()}</h2>
         </div>
     )
