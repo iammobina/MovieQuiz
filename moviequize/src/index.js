@@ -2,8 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 
+//Components will be added below:
+import Header from "./components/header";
+
 const App = () =>{
-   return <h1>it's gonna be LEGENDARY</h1>
+   return(
+   <div>
+      <Header/>
+   </div>
+   )
 }
 
 ReactDOM.render(<App/>,document.querySelector('#root'));
